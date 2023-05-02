@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/fdf50e8961.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+
+      body {
+        background-color: orange;
+      }
+
+      .header {
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        padding: 1.6rem 3.2rem;
+      }
+
+      .logo {
+        height: 5.5rem;
+      }
+
+      .nav-link-box {
+        display: flex;
+        gap: 6rem;
+      }
+
+      .nav-link-box {
+        list-style: none;
+      }
+
+      .nav-link:link,
+      .nav-link:visited {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 2rem;
+        color: #fff;
+        transition: all 0.3s;
+      }
+
+      .nav-link:hover,
+      .nav-link:active {
+        transform: scale(1.4);
+        color: greenyellow;
+      }
+
+      main {
+        display: flex;
+        gap: 3rem;
+        max-width: 130rem;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.6rem 3.2rem;
+      }
+
+      .img {
+        background-color: black;
+        max-width: 40%;
+      }
+
+      .home-img {
+        max-width: 100%;
+      }
+
+      .intro p {
+        font-size: 6rem;
+      }
+
+      .heading-primary {
+        font-size: 8rem;
+      }
+
+      .slogan {
+        font-size: 4rem;
+        letter-spacing: 1rem;
+        margin-bottom: 3rem;
+      }
+
+      .btn:link,
+      .btn:visited {
+        padding: 1.6rem 3.2rem;
+        font-size: 2rem;
+        background-color: black;
+        color: orange;
+        border: none;
+        text-decoration: none;
+        transition: all 0.3s;
+      }
+
+      .btn:hover,
+      .btn:active {
+        background-color: orange;
+        color: black;
+      }
+
+      .section-content {
+        margin: 0 auto;
+        padding: 5rem 3.2rem;
+        max-width: 120rem;
+        font-size: 3rem;
+        font-weight: 500;
+      }
+
+      .section-content p {
+        color: #333;
+        margin-top: 3rem;
+      }
+
+      .section-footer {
+        background-color: black;
+      }
+
+      .footer {
+        color: orange;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 120rem;
+        margin: 0 auto;
+        padding: 2rem 3.2rem;
+      }
+
+      .heading-secondary {
+        font-size: 4rem;
+      }
+
+      .icons {
+        display: flex;
+        gap: 2rem;
+      }
+
+      .btn-sub:link,
+      .btn-sub:visited {
+        background-color: orange;
+        color: black;
+        padding: 1rem 3rem;
+        margin-top: 1rem;
+        text-decoration: none;
+        transition: all 0.3s;
+      }
+
+      .btn-sub:hover,
+      .btn-sub:active {
+        background-color: black;
+        color: orange;
+      }
+
+      .icon:visited,
+      .icon:link {
+        font-size: 5rem;
+        color: orange;
+        transition: all 0.3s;
+      }
+
+      .icon:hover,
+      .icon:active {
+        background-color: orange;
+        color: black;
+      }
+
+      .subscribe {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .text {
+        color: orange;
+        font-size: 2rem;
+        width: 40rem;
+        margin: 0 auto;
+        padding: 4rem;
+      }
+
+      @media all and (max-width: 764px) {
+        html {
+          font-size: 50%;
+        }
+      }
+
+      @media all and (max-width: 610px) {
+        main {
+          display: block;
+        }
+        .intro {
+          max-width: 100%;
+        }
+        .intro p {
+          font-size: 4rem;
+        }
+        .title {
+          font-size: 6rem;
+        }
+        .slogan {
+          font-size: 2rem;
+          font-weight: 700;
+        }
+        .img {
+          margin-top: 5rem;
+          max-width: 100%;
+        }
+        .footer {
+          display: block;
+        }
+        .connect {
+          max-width: 100%;
+          margin: 0 auto 3rem auto;
+        }
+        .subscribe {
+          max-width: 100%;
+          margin: 0 auto;
+        }
+      }
+
+      @media all and (max-width: 400px) {
+        .header {
+          padding: 0.8rem 1.6rem 0.8rem 0;
+        }
+      }
+
+      @media all and (max-width: 340px) {
+        html {
+          font-size: 35%;
+        }
+      }
+    </style>
+
+    <title>Creative Chronicles</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-img">
+        <img src="img/logo.png" class="logo" alt="" srcset="" />
+      </div>
+      <nav class="nav">
+        <ul class="nav-link-box">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/blogs" class="nav-link">Blogs</a></li>
+          <li><a href="/subscribe" class="nav-link">Subscribe</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="section-home">
+      <main>
+        <div class="intro">
+          <p>Welcome to</p>
+          <h1 class="heading-primary">Creative Chronicles</h1>
+          <div class="slogan">Sharing stories that matter</div>
+          <a href="/post" class="btn">Post a Blog &Rarr;</a>
+        </div>
+        <div class="img">
+          <img src="img/logo.png" class="home-img" alt="" srcset="" />
+        </div>
+      </main>
+    </section>
+
+    <section class="section-content">
+      <p>
+        Welcome to Creative Chronicles, your go-to resource for Blogs. My name
+        is Harshal, and I'm thrilled to share my knowledge and expertise with
+        you.
+      </p>
+      <p>
+        At Creative Chronicles, we're passionate about providing valuable
+        insights, tips, and advice on many topics. Whether you're a seasoned
+        expert or just starting out, our content is designed to help you achieve
+        your goals, improve your skills, and stay up-to-date on the latest
+        trends.
+      </p>
+      <p>
+        Our blog covers a wide range of topics, and our team of expert writers
+        is dedicated to providing in-depth, informative content that you won't
+        find anywhere else. From how-to guides to industry news and analysis,
+        we've got you covered.
+      </p>
+      <p>
+        But our blog is more than just a source of information. We're also
+        committed to building a community of like-minded individuals who share
+        our passion. Whether you're looking to connect with others in your
+        field, share your own experiences, or simply learn something new, we
+        invite you to join us and be a part of the conversatio
+      </p>
+      <p>
+        So take a look around, explore our content, and don't forget to
+        subscribe to our newsletter to stay up-to-date on the latest from Blogs.
+        Thanks for stopping by!
+      </p>
+    </section>
+
+    <section class="section-footer">
+      <footer>
+        <div class="footer">
+          <div class="connect">
+            <h2 class="heading-secondary">Connect with us on:</h2>
+            <div class="icons">
+              <a href="#" class="icon">
+                <i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#" class="icon">
+                <i class="fa-brands fa-instagram icon"></i>
+              </a>
+              <a href="#" class="icon"><i class="fa-brands fa-twitter"></i></a>
+              <a
+                href="https://www.linkedin.com/in/harshal-patil-hrp017/"
+                target="_blank"
+                class="icon"
+              >
+                <i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="subscribe">
+            <h2 class="heading-secondary">Subscribe to our:</h2>
+            <a href="/subscribe" class="btn btn-sub">Newsletter</a>
+          </div>
+        </div>
+        <p class="text">All copyrights &copy; reserved since 2023</p>
+      </footer>
+    </section>
+  </body>
+</html>
