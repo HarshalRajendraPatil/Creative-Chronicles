@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+
+      body {
+        background-color: orange;
+      }
+
+      .header {
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        padding: 1.6rem 3.2rem;
+      }
+
+      .logo {
+        height: 5.5rem;
+      }
+
+      .nav-link-box {
+        display: flex;
+        gap: 6rem;
+      }
+
+      .nav-link-box {
+        list-style: none;
+      }
+
+      .nav-link:link,
+      .nav-link:visited {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 2rem;
+        color: #fff;
+        transition: all 0.3s;
+      }
+
+      .nav-link:hover,
+      .nav-link:active {
+        transform: scale(1.4);
+        color: greenyellow;
+      }
+
+      .container {
+        text-align: center;
+        padding: 2rem 4rem;
+        max-width: 120rem;
+        margin: 40px auto;
+      }
+
+      .heading-primary {
+        font-size: 5rem;
+        text-align: center;
+      }
+
+      .text {
+        margin-top: 3rem;
+        line-height: 2;
+        font-size: 3rem;
+        text-align: center;
+      }
+
+      .btn {
+        margin-top: 3rem;
+        padding: 1.6rem 3.2rem;
+        font-size: 2rem;
+        background-color: black;
+        color: orange;
+        border: none;
+        transition: all 0.3s;
+      }
+
+      .link:visited,
+      .link:link,
+      .link:hover,
+      .link:active {
+        color: orange;
+        text-decoration: none;
+      }
+
+      @media (max-width: 450px) {
+        html {
+          font-size: 35%;
+        }
+      }
+    </style>
+    <title>Creative Chronicles</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-img">
+        <img src="img/logo.png" class="logo" alt="" srcset="" />
+      </div>
+      <nav class="nav">
+        <ul class="nav-link-box">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/blogs" class="nav-link">Blogs</a></li>
+          <li><a href="/subscribe" class="nav-link">Subscribe</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <h1 class="heading-primary">Nothing to show</h1>
+      <h1 class="heading-primary">Post a blog to see.</h1>
+      <button class="btn"><a class="link" href="/">Go back &Rarr;</a></button>
+    </div>
+  </body>
+</html>

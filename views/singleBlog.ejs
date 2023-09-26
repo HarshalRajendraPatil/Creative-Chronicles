@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/fdf50e8961.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+
+      body {
+        background-color: orange;
+      }
+
+      .header {
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        padding: 1.6rem 3.2rem;
+      }
+
+      .logo {
+        height: 5.5rem;
+      }
+
+      .nav-link-box {
+        display: flex;
+        gap: 6rem;
+      }
+
+      .nav-link-box {
+        list-style: none;
+      }
+
+      .nav-link:link,
+      .nav-link:visited {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 2rem;
+        color: #fff;
+        transition: all 0.3s;
+      }
+
+      .nav-link:hover,
+      .nav-link:active {
+        transform: scale(1.4);
+        color: greenyellow;
+      }
+
+      .container {
+        max-width: 120rem;
+        padding: 1.5rem 3rem;
+        margin: 0 auto;
+      }
+
+      .heading {
+        font-size: 5rem;
+        margin-bottom: 3rem;
+      }
+
+      .img {
+        background-color: red;
+        display: block;
+        width: 65%;
+      }
+
+      .body {
+        margin-top: 3rem;
+        font-size: 3rem;
+      }
+
+      .btn:link,
+      .btn:visited {
+        display: inline-block;
+        text-decoration: none;
+        margin-top: 3rem;
+        padding: 1.6rem 3.2rem;
+        font-size: 2rem;
+        background-color: black;
+        color: orange;
+        border: none;
+      }
+
+      @media (max-width: 750px) {
+        .img {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 600px) {
+        html {
+          font-size: 55%;
+        }
+      }
+
+      @media all and (max-width: 400px) {
+        .header {
+          padding: 0.8rem 1.6rem 0.8rem 0;
+        }
+      }
+
+      @media all and (max-width: 340px) {
+        html {
+          font-size: 35%;
+        }
+      }
+    </style>
+
+    <title>Creative Chronicles</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-img">
+        <img src="img/logo.png" class="logo" alt="" srcset="" />
+      </div>
+      <nav class="nav">
+        <ul class="nav-link-box">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/blogs" class="nav-link">Blogs</a></li>
+          <li><a href="/subscribe" class="nav-link">Subscribe</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1 class="heading"><%= title %></h1>
+      <img src="<%= coverImage %>" class="img" alt="" srcset="" />
+      <p class="body"><%= body %></p>
+      <a href="/blogs" class="btn">Go back &Rarr;</a>
+      <a href="/delete/<%= _id %>" class="btn">Delete</a>
+    </div>
+  </body>
+</html>
